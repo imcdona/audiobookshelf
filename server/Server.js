@@ -239,7 +239,7 @@ class Server {
     })
     app.get('/healthcheck', (req, res) => res.sendStatus(200))
 
-    this.server.listen(this.Port, this.Host, () => {
+    this.server.listen(this.Port, () => {
       Logger.info(`Listening on http://${this.Host}:${this.Port}`)
     })
 
